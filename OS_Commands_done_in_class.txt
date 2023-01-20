@@ -81,12 +81,28 @@ and shows error if file is not found)
 
 26. $rmdir file1                (removes the directory 'file1' from the working directory)
 
-27. $head file1                  (prints content of file1 from top to bottom)
+27. $head file1                  (prints all lines in content of file1 from top to bottom)
 
-28. $tail file1                  (prints content of file1 from top to bottom)
+28. $tail file1                  (prints all lines in content of file1 from top to bottom)
 
-29. $tail -n file1                  ('n' is any integer number. Prints content of file1
-from top to bottom, while searching from bottom upto the nth character.
+29. $tail -n file1                  ('n' is any integer number. Prints all lines in 
+content of file1 from top to bottom, while searching from bottom upto the nth character.
 
-30. $head -n file1                  ('n' is any integer number. Prints content of file1
-from top to bottom, while searching from top upto the nth character.
+30. $head -n file1                  ('n' is any integer number. Prints all lines in 
+content of file1 from top to bottom, while searching from top upto the nth character.
+
+31. $ls -l                          (lists all files and folders in directory with more
+information like file permissions and the no. of sub files / directories inside a directory)
+
+32. $ls -r                           (same as ls, just dispalys in reverse order)
+
+33. $ls -R                           (lists all and folders and files inside
+folders one by one)
+
+34. $ls -lR                          (list everything in the directory one by one in a list)
+
+35. $apropos list files/more         (same as 'ls -lR' but also shows hidden files)
+
+36. $grep
+
+37. $cut
