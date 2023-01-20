@@ -1,0 +1,77 @@
+----------------------------------------------------------------------
+====================== Operating System LAB ==========================
+----------------------------------------------------------------------
+--------- All the commands done in class are practiced here. ---------
+----------- To be used for later before EXAM / revision... -----------
+----------------------------------------------------------------------
+========================= Some Definitions ===========================
+----------------------------------------------------------------------
+'$' means that the system is ready to take commands from the user.
+----------------------------------------------------------------------
+============================== Commands ==============================
+----------------------------------------------------------------------
+1. $date        (To know date at that time)
+Fri 20 Jan 2023 09:17:28 PM UTC
+
+2. $whoami      (To know who is the user of the system)
+user
+
+3. $who         (To get more detailed info about the users)
+user     tty1         2023-01-20 21:12
+user     tty7         2023-01-20 21:12 (:0)
+
+4. $pwd
+/home/user
+
+5. $ls           (list all the files in the current directory)
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+
+6. $mkdir new_directory1        (used to make a new directory)
+
+7. $cd sub_dir       (changes directory to sub_dir, if it does not exists it gives error)
+
+8. $cd ..        (returns back to the previous directory)
+
+9. $cat > file1            (lets the user write into that file. If the
+file does not exist, it create the file. We need to press 'CTRL' + 'Z' 
+to exit writing in that file. If content in the file already exists, then
+it removes all the previous content and adds the new content to that file)
+
+10. $cat file1              (shows the content of file, gives error if no file exists)
+
+11. $touch file2            (creates a file, but does not allow the user to 
+add content in the file)
+
+12. cat file1>>file2        (The contents of file1 is appended to file2
+without removing content of file2)
+
+13. echo anything 123       (prints to the screen anything after echo)
+
+14. echo "anything 345"     (prints to the screen anything after echo and between
+"" so this also print the new lines)
+
+15. mv file1 file2          (moves file1 to file2, i.e. file1 content is copied to
+file2, after deleting all the content of file2 and then file1 is deleted)
+
+16. cmp file1 file2         (compares 2 files and gives error if both the files 
+dont have the same content. Otherwise shows nothing)
+
+17. diff file1 file2        (shows the differences in file1 and file2)
+
+18. wc -l file1             (word count function: counts the no. of lines in file1)
+
+19. wc -c file1             (word count function: counts the no. of characters
+in file1, it counts the new line characters as 1)
+
+20. wc -w file1             (word count function: counts the no. of words
+in file1, words are different from each other with 'spaces')
+
+21. wc -wl file1            (word count function: counts the no. of words and
+lines in total in file1)
+
+22. sort file1                  (sorts the lines in ascending order - special symbols then
+0-9 then A-Z then a-z, in the fasion of ASCII)
+
+23. sort file1 file2            (sorts both files, file1 and file2 in ascending order)
+
+24. head 
