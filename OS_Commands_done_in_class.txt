@@ -42,36 +42,51 @@ it removes all the previous content and adds the new content to that file)
 11. $touch file2            (creates a file, but does not allow the user to 
 add content in the file)
 
-12. cat file1>>file2        (The contents of file1 is appended to file2
+12. $cat file1>>file2        (The contents of file1 is appended to file2
 without removing content of file2)
 
-13. echo anything 123       (prints to the screen anything after echo)
+13. $echo anything 123       (prints to the screen anything after echo)
 
-14. echo "anything 345"     (prints to the screen anything after echo and between
+14. $echo "anything 345"     (prints to the screen anything after echo and between
 "" so this also print the new lines)
 
-15. mv file1 file2          (moves file1 to file2, i.e. file1 content is copied to
+15. $mv file1 file2          (moves file1 to file2, i.e. file1 content is copied to
 file2, after deleting all the content of file2 and then file1 is deleted)
 
-16. cmp file1 file2         (compares 2 files and gives error if both the files 
+16. $cmp file1 file2         (compares 2 files and gives error if both the files 
 dont have the same content. Otherwise shows nothing)
 
-17. diff file1 file2        (shows the differences in file1 and file2)
+17. $diff file1 file2        (shows the differences in file1 and file2)
 
-18. wc -l file1             (word count function: counts the no. of lines in file1)
+18. $wc -l file1             (word count function: counts the no. of lines in file1)
 
-19. wc -c file1             (word count function: counts the no. of characters
+19. $wc -c file1             (word count function: counts the no. of characters
 in file1, it counts the new line characters as 1)
 
-20. wc -w file1             (word count function: counts the no. of words
+20. $wc -w file1             (word count function: counts the no. of words
 in file1, words are different from each other with 'spaces')
 
-21. wc -wl file1            (word count function: counts the no. of words and
+21. $wc -wl file1            (word count function: counts the no. of words and
 lines in total in file1)
 
-22. sort file1                  (sorts the lines in ascending order - special symbols then
+22. $sort file1                  (sorts the lines in ascending order - special symbols then
 0-9 then A-Z then a-z, in the fasion of ASCII)
 
-23. sort file1 file2            (sorts both files, file1 and file2 in ascending order)
+23. $sort file1 file2            (sorts both files, file1 and file2 in ascending order)
 
-24. head 
+24. $man ls                     (gives all posiiblle commands that can be used)
+
+25. $rm file1                    (remnoves the file 'file1' from the working directory
+and shows error if file is not found)
+
+26. $rmdir file1                (removes the directory 'file1' from the working directory)
+
+27. $head file1                  (prints content of file1 from top to bottom)
+
+28. $tail file1                  (prints content of file1 from top to bottom)
+
+29. $tail -n file1                  ('n' is any integer number. Prints content of file1
+from top to bottom, while searching from bottom upto the nth character.
+
+30. $head -n file1                  ('n' is any integer number. Prints content of file1
+from top to bottom, while searching from top upto the nth character.
