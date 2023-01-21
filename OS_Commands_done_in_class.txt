@@ -4,9 +4,15 @@
 --------- All the commands done in class are practiced here. ---------
 ----------- To be used for later before EXAM / revision... -----------
 ----------------------------------------------------------------------
-========================= Some Definitions ===========================
+============================ Some Notes ==============================
 ----------------------------------------------------------------------
-'$' means that the system is ready to take commands from the user.
+1. '$' means that the system is ready to take commands from the user.
+2. Hard links cannot be created on two different file structures. Like 
+in a system that has both Ubuntu and Windows we cannot create hard
+links from windows to be used on Ubuntu.
+3. For a soft link, if the parent file is deleted, then it becomes 
+a dangling link and the soft link file becomes a zombie file.
+4. No. of links increases by 1 when hard links are created for a file.
 ----------------------------------------------------------------------
 ============================== Commands ==============================
 ----------------------------------------------------------------------
@@ -81,9 +87,9 @@ and shows error if file is not found)
 
 26. $rmdir file1                (removes the directory 'file1' from the working directory)
 
-27. $head file1                  (prints all lines in content of file1 from top to bottom)
+27. $head file1                  (prints first 10 lines in content of file1 from top to bottom)
 
-28. $tail file1                  (prints all lines in content of file1 from top to bottom)
+28. $tail file1                  (prints last 10 lines in content of file1 from top to bottom)
 
 29. $tail -n file1                  ('n' is any integer number. Prints all lines in 
 content of file1 from top to bottom, while searching from bottom upto the nth character.
@@ -103,6 +109,19 @@ folders one by one)
 
 35. $apropos list files/more         (same as 'ls -lR' but also shows hidden files)
 
-36. $grep
+36.                 ('nl' function gives line number to the content of the file)
+$nl -n rn file1     (-rn means right justified)
+$nl -n ln file1     (-ln means left justified)
+$nl -n rz file1     (-rz means right justified with leading zeroes)
+$nl -i 3 file1      (-i stands for increment each line by the next INT number)
 
-37. $cut
+37. $ln file1 file2       (ln creates a hard link named file2 from file1. It is  
+a copy of the original file that serves as a pointer to the same file, allowing 
+it to be accessed even if the original file is deleted or relocated.)
+
+38. $ls -lai        (this can be used to get more detailed info for each file
+in the current working directory, with no. of links, permissions, siuze, date ...)
+
+39. ln -s file1 file1_soft      ('ln -s' creates a soft link file)
+
+40. 
